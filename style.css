@@ -43,9 +43,6 @@ h1 {
     border: 12px solid #222;
     border-radius: 20px;
 
-    box-shadow:
-        0 0 20px rgba(0, 229, 255, 0.5);
-
     overflow: hidden;
 }
 
@@ -66,7 +63,7 @@ h1 {
             rgba(255,255,255,0.18),
             rgba(255,255,255,0.03)
         ),
-        #73dce5;
+        #d35e7f;
 
     border-bottom: 10px solid #222;
 }
@@ -100,24 +97,34 @@ h1 {
     left: 225px;
 
     width: 50px;
-    height: 150px;
+    height: 520px;
 
     z-index: 10;
 
     transition: left 0.15s linear;
+
+    overflow: visible;
 }
 
 .rope {
+    position: absolute;
+
+    top: 0;
+    left: 22px;
+
     width: 6px;
     height: 90px;
 
-    margin: auto;
-
     background: #333;
+
+    transition: height 1s ease;
 }
 
 .claw-head {
-    position: relative;
+    position: absolute;
+
+    top: 90px;
+    left: 0;
 
     width: 50px;
     height: 40px;
@@ -125,8 +132,11 @@ h1 {
     background: #ddd;
 
     border: 4px solid #333;
-
     border-radius: 50%;
+
+    transform: translateY(0);
+
+    transition: transform 1s ease;
 }
 
 /* Claw arms */
@@ -237,7 +247,7 @@ h1 {
 .machine-bottom {
     padding: 20px;
 
-    background: #14c7d8;
+    background: #d35e7f;
 }
 
 .screen {

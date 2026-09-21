@@ -61,18 +61,19 @@ function dropClaw() {
 
     moving = true;
 
-    // Move claw down
-    claw.style.transition = "top 1s ease";
+    const rope = claw.querySelector(".rope");
+    const clawHead = claw.querySelector(".claw-head");
 
-    claw.style.top = "300px";
+    // DROP
+    rope.style.height = "390px";
+    clawHead.style.transform = "translateY(300px)";
 
-
-    // Wait for claw to reach bottom
+    // Wait at the bottom
     setTimeout(() => {
 
-        // Move claw back up
-        claw.style.top = "0px";
-
+        // RETURN
+        rope.style.height = "90px";
+        clawHead.style.transform = "translateY(0)";
 
         setTimeout(() => {
 
@@ -81,8 +82,6 @@ function dropClaw() {
             scoreDisplay.textContent = "Score: " + score;
 
             moving = false;
-
-            claw.style.transition = "left 0.15s linear, top 1s ease";
 
         }, 1000);
 
