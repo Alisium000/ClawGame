@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claw Machine Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game">
+
+        <h1>Claw Machine</h1>
+
+        <!-- Machine -->
+        <div class="machine">
+
+            <!-- Glass area -->
+            <div class="glass">
+
+                <!-- Claw -->
+                <div class="claw" id="claw">
+                    <div class="rope"></div>
+                    <div class="claw-head">
+                        <div class="arm left"></div>
+                        <div class="arm right"></div>
+                    </div>
+                </div>
+
+                <!-- Toys -->
+                <div class="toys">
+
+                    <div class="toy">🧸</div>
+                    <div class="toy">🐰</div>
+                    <div class="toy">🐱</div>
+                    <div class="toy">🐸</div>
+                    <div class="toy">🐻</div>
+                    <div class="toy">🐶</div>
+                    <div class="toy">🦊</div>
+                    <div class="toy">🐼</div>
+
+                </div>
+
+                <!-- Prize chute -->
+                <div class="chute">
+                    PRIZE
+                </div>
+
+            </div>
+
+            <!-- Machine bottom -->
+            <div class="machine-bottom">
+
+                <div class="screen">
+                    <span id="score">Score: 0</span>
+                </div>
+
+                <div class="controls">
+
+                    <button id="leftBtn">⬅</button>
+
+                    <button id="dropBtn">DROP</button>
+
+                    <button id="rightBtn">➡</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="instructions">
+            Use the arrows to move the claw. Press DROP to grab a prize!
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
